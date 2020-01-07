@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from './pages/Home/home.page'
 import Shop from './pages/Shop/shop.page'
+import SignInSignUp from './pages/SignInSignUp/sign-in-sign-up.page'
 import Header from './components/Header/header.component'
 
 const Hats = () =>
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route exact path='/' component = { Home }/>
         <Route path='/shop' component = { Shop }/>
+        <Route path='/signin' component = { SignInSignUp }/>
       </Switch>
     </div>
   );
