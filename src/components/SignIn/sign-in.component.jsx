@@ -26,7 +26,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   const handleChange = e => {
     const { value, name } = e.target;
 
-    setCredentials( { ...userCredentials, [name]: value })
+    setUserCredentials( { ...userCredentials, [name]: value })
   }
 
   return (
@@ -38,7 +38,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
         <FormInput
           name='email'
           type='email'
-          value={temail}
+          value={email}
           handleChange={handleChange}
           label='email'
           required
